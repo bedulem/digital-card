@@ -4,4 +4,39 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  transition: all 1s ;
+}
+
+.rainbow-curtain {
+  background: linear-gradient(45deg,#FFFF00 6%,#FFA500 25%,#F14444 45%,#d53567 55%,#9A109A 94%); 
+}
+
+.black-curtain {
+  animation: animStar 5s ease infinite;
+  background: linear-gradient( 45deg, rgb(4,0,69), rgb(17,14,34),rgb(72,39,85) ,rgb(147,3,95) );
+  background-size: 400% 400%;
+}
+
+@keyframes animStar {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-webkit-keyframes animStar {
+  0% {
+		-webkit-background-position: 0% 50%;
+	}
+	50% {
+		-webkit-background-position: 100% 50%;
+	}
+	100% {
+		-webkit-background-position: 0% 50%;
+	}
 }
